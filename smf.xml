@@ -109,7 +109,7 @@
 		   postgresql.conf is different than the other instances.
 		-->
         	<property_group name='postgresql' type='application'>
-                	<propval name='bin' type='astring' value='/opt/postgresql-105/bin/' />
+                	<propval name='bin' type='astring' value='/opt/postgresql-10.5/bin/' />
                 	<propval name='data' type='astring' value='/export/databases/pgsql' />
                 	<propval name='log' type='astring' value='server.log' />
 			<propval name='initialized' type='boolean'
