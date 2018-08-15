@@ -10,12 +10,7 @@ PREFIX=build/postgresql
 TARGET_DIRECTORY=/opt/postgresql-${VERSION}
 export TARGET_DIRECTORY
 
-CONFIGURE_OPTS="--enable-thread-safety
-    --enable-debug
-    --with-openssl
-    --with-libxml
-    --prefix=${PREFIX}
-    --with-readline"
+CONFIGURE_OPTS="--enable-thread-safety --enable-debug --with-openssl --with-libxml --prefix=${PREFIX} --with-readline"
 
 
 clone:
