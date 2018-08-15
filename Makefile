@@ -6,7 +6,7 @@ LOCAL_SRC_TAR=src.tar.gz2
 LOCAL_SRC=postgresql-${VERSION}
 RELEASE_DIR=src/_build/default/rel
 
-PREFIX="${HOME}/build/postgresql"
+PREFIX="${HOME}/build/postgresql-${VERSION}"
 TARGET_DIRECTORY=/opt/postgresql-${VERSION}
 export TARGET_DIRECTORY
 
@@ -21,4 +21,5 @@ clone:
 build:
 	cd ${LOCAL_SRC}; ./configure "${CONFIGURE_OPTS}"
 	cd ${LOCAL_SRC}; make -j 4
+	cd ${LOCAL_SRC}; make install
 
