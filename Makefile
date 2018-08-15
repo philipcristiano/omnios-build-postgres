@@ -20,7 +20,7 @@ clone:
 
 build:
 	cd ${LOCAL_SRC}; ./configure "${CONFIGURE_OPTS}"
-	cd ${LOCAL_SRC}; make -j 4
+	cd ${LOCAL_SRC}; make -j 8
 	cd ${LOCAL_SRC}; make install
 
 package:
