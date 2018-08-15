@@ -63,19 +63,19 @@
         <exec_method
                 type='method'
                 name='start'
-                exec='/lib/svc/method/postgres-105 start'
+                exec='/lib/svc/method/postgresql-105 start'
                 timeout_seconds='60' />
 
         <exec_method
                 type='method'
                 name='stop'
-                exec='/lib/svc/method/postgres-105 stop'
+                exec='/lib/svc/method/postgresql-105 stop'
                 timeout_seconds='60' />
 
         <exec_method
                 type='method'
                 name='refresh'
-                exec='/lib/svc/method/postgres-105 refresh'
+                exec='/lib/svc/method/postgresql-105 refresh'
                 timeout_seconds='60' />
 
         <!--
@@ -97,9 +97,9 @@
         <instance name='default' enabled='false'>
 
         	<method_context>
-                	<method_credential user='postgres' group='postgres' />
+                	<method_credential user='postgresql' group='postgresql' />
                   <method_environment>
-                      <envvar name="HOME" value="/export/home/postgres"/>
+                      <envvar name="HOME" value="/export/home/postgresql"/>
                   </method_environment>
         	</method_context>
 
@@ -115,7 +115,7 @@
 			<propval name='initialized' type='boolean'
 			   value='false' />
 			<propval name='value_authorization' type='astring'
-			   value='solaris.smf.value.postgres' />
+			   value='solaris.smf.value.postgresql' />
         	</property_group>
 
         </instance>
@@ -129,7 +129,7 @@
                         </loctext>
                 </common_name>
                 <documentation>
-                        <manpage title='postgres_105' section='5' />
+                        <manpage title='postgresql_105' section='5' />
                         <doc_link name='postgresql.org'
                                 uri='http://postgresql.org' />
                 </documentation>
