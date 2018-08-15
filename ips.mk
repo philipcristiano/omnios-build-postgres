@@ -1,6 +1,5 @@
-IPS_BUILD_DIR ?= erlang-ips
+IPS_BUILD_DIR ?= ips-build
 IPS_TMP_DIR ?= tmp
-RELEASE_DIR ?= _rel
 
 IPS_BUILD_TIME=$(shell TZ=UTC date +"%Y%m%dT%H%M%SZ")
 export IPS_FMRI=server/${PROJECT}@${PROJECT_VERSION}:${IPS_BUILD_TIME}
