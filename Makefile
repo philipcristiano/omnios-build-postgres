@@ -3,6 +3,7 @@ VERSION=10.5
 PROJECT_VERSION=${VERSION}
 DOWNLOAD_SRC=https://ftp.postgresql.org/pub/source/v${VERSION}/postgresql-${VERSION}.tar.bz2
 LOCAL_SRC_TAR=src.tar.gz2
+LOCAL_SRC=postgresql-${VERSION}
 TARGET_DIRECTORY=/opt/dalmatinerdb
 RELEASE_DIR=src/_build/default/rel
 
@@ -12,3 +13,7 @@ clone:
 	curl ${DOWNLOAD_SRC} -o ${LOCAL_SRC_TAR}
 	tar -xf ${LOCAL_SRC_TAR}
 	@ls
+
+build:
+	cd ${LOCAL_SRC}; ./configure
+	cd ${LOCAL_SRC}; make
