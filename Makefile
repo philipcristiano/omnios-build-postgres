@@ -6,7 +6,7 @@ LOCAL_SRC_TAR=src.tar.gz2
 LOCAL_SRC=postgresql-${VERSION}
 RELEASE_DIR=src/_build/default/rel
 
-PREFIX=build/postgresql
+PREFIX="${HOME}/build/postgresql"
 TARGET_DIRECTORY=/opt/postgresql-${VERSION}
 export TARGET_DIRECTORY
 
