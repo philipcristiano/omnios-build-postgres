@@ -23,7 +23,7 @@ ips-clean:
 
 ips-prototype:
 	mkdir -p ${IPS_BUILD_DIR}/opt/ ${IPS_TMP_DIR} "${IPS_BUILD_DIR}/etc"
-	cp -R ${RELEASE_DIR} ${IPS_BUILD_DIR}/opt/${PROJECT}
+	cp -r ${PKG_BUILD_DIR} ${IPS_BUILD_DIR}/opt/${PROJECT}
 	rm -rf ${IPS_BUILD_DIR}/opt/${PROJECT}/${PROJECT}_release-*.tar.gz
 
 	# Store initial transform
