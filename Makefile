@@ -19,6 +19,6 @@ clone:
 	@ls
 
 build:
-	cd ${LOCAL_SRC}; ./configure ${CONFIGURE_OPTS}
+	cd ${LOCAL_SRC}; ./configure "${CONFIGURE_OPTS}"
 	cd ${LOCAL_SRC}; make -j 4
 
