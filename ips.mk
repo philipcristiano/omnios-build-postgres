@@ -47,7 +47,8 @@ define IPS_TRANSFORM
 <transform dir path=lib$$ -> drop>
 <transform dir path=lib/svc$$ -> drop>
 <transform dir path=lib/svc/manifest$$ -> drop>
-<transform dir path=lib/svc/manifest/application$$ -> drop>
+<transform dir path=lib/svc/manifest/database$ -> drop>
+<transform dir path=lib/svc/method$ -> drop>
 <transform dir path=opt$$ -> drop>
 <transform dir path=etc$$ -> drop>
 <transform dir path=var$$ -> drop>
