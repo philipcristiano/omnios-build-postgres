@@ -6,8 +6,8 @@ LOCAL_SRC_TAR=src.tar.gz2
 LOCAL_SRC=postgresql-${VERSION}
 RELEASE_DIR=src/_build/default/rel
 
-PREFIX=/opt/postgresql-${VERSION}
-TARGET_DIRECTORY=${PREFIX}
+PREFIX=build/postgresql
+TARGET_DIRECTORY=/opt/postgresql-${VERSION}
 export TARGET_DIRECTORY
 
 CONFIGURE_OPTS="--enable-thread-safety
