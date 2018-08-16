@@ -7,6 +7,9 @@ DOWNLOAD_SRC=https://ftp.postgresql.org/pub/source/v${VERSION}/postgresql-${VERS
 LOCAL_SRC_TAR=src.tar.gz2
 LOCAL_SRC=postgresql-${VERSION}
 
+USERNAME=postgres
+GROUPNAME=postgres
+
 PREFIX="${HOME}/build/postgresql-${VERSION}"
 PKG_BUILD_DIR="${PREFIX}"
 

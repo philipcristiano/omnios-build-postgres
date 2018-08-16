@@ -2,6 +2,8 @@ IPS_BUILD_DIR ?= ips-build
 IPS_TMP_DIR ?= tmp
 
 PROJECT_NAME ?= ${PROJECT}
+USERNAME ?= ${PROJECT}
+GROUPNAME ?= ${PROJECT}
 
 IPS_BUILD_TIME=$(shell TZ=UTC date +"%Y%m%dT%H%M%SZ")
 export IPS_FMRI=server/${PROJECT_NAME}@${PROJECT_VERSION}:${IPS_BUILD_TIME}
@@ -15,8 +17,8 @@ set name=pkg.fmri value=${IPS_FMRI}
 set name=pkg.description value="${IPS_DESCRIPTION}"
 set name=pkg.summary value="${IPS_SUMMARAY}"
 set name=variant.arch value=${ARCH}
-group groupname=${PROJECT}
-user username=${PROJECT} group=${PROJECT} home-dir=/opt/${PROJECT}-${VERSION}
+group groupname=${GROUPNAME}
+user username=${USERNAME} group=${GROUPNAME} home-dir=/opt/${PROJECT}-${VERSION}
 endef
 export IPS_METADATA
 

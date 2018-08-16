@@ -97,9 +97,9 @@
         <instance name='default' enabled='false'>
 
         	<method_context>
-                	<method_credential user='postgresql' group='postgresql' />
+                	<method_credential user='postgres' group='postgres' />
                   <method_environment>
-                      <envvar name="HOME" value="/export/home/postgresql"/>
+                      <envvar name="HOME" value="/export/home/postgres"/>
                   </method_environment>
         	</method_context>
 
