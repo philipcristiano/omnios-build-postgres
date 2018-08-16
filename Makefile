@@ -12,7 +12,7 @@ GROUPNAME=postgres
 
 PREFIX="${HOME}/build/postgresql-${VERSION}"
 PKG_BUILD_DIR="${PREFIX}"
-LD_RUN_PATH='$ORIGIN/../lib'
+LD_RUN_PATH="/opt/postgresql-${VERSION}/lib"
 
 CONFIGURE_OPTS="--enable-thread-safety --enable-debug --with-openssl --with-libxml --prefix=${PREFIX} --with-readline --disable-rpath"
 
