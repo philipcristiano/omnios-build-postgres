@@ -54,8 +54,8 @@ define IPS_TRANSFORM
 <transform dir path=var$$ -> drop>
 <transform dir path=var/lib$$ -> drop>
 <transform file path=(var|lib)/svc/manifest/.*\.xml$ -> default restart_fmri svc:/system/manifest-import:default>
-<transform file dir -> set owner ${PROJECT}>
-<transform file dir -> set group ${PROJECT}>
+<transform file dir -> set owner ${USERNAME}>
+<transform file dir -> set group ${GROUPNAME}>
 endef
 export IPS_TRANSFORM
 
