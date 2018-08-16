@@ -12,7 +12,7 @@ GROUPNAME=postgres
 
 PREFIX="${HOME}/build/postgresql-${VERSION}"
 PKG_BUILD_DIR="${PREFIX}"
-LD_RUN_PATH="/opt/postgresql-${VERSION}/lib"
+LD_RUN_PATH=/opt/postgresql-${VERSION}/lib
 export LD_RUN_PATH
 
 LDFLAGS = "-Wl,-rpath,${LD_RUN_PATH}"
