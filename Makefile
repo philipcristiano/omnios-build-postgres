@@ -13,7 +13,7 @@ GROUPNAME=postgres
 PREFIX="${HOME}/build/postgresql-${VERSION}"
 PKG_BUILD_DIR="${PREFIX}"
 
-CONFIGURE_OPTS="--enable-thread-safety --enable-debug --with-openssl --with-libxml --prefix=${PREFIX} --with-readline"
+CONFIGURE_OPTS="--enable-thread-safety --enable-debug --with-openssl --with-libxml --prefix=${PREFIX} --with-readline --libdir=/opt/postgresql-${VERSION}/lib"
 
 
 clone:
