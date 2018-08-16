@@ -8,10 +8,7 @@ LOCAL_SRC_TAR=src.tar.gz2
 LOCAL_SRC=postgresql-${VERSION}
 
 PREFIX="${HOME}/build/postgresql-${VERSION}"
-TARGET_DIRECTORY=/opt/postgresql-${SAFE_VERSION}
 PKG_BUILD_DIR="${PREFIX}"
-
-export TARGET_DIRECTORY
 
 CONFIGURE_OPTS="--enable-thread-safety --enable-debug --with-openssl --with-libxml --prefix=${PREFIX} --with-readline"
 

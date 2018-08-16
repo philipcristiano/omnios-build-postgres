@@ -16,7 +16,7 @@ set name=pkg.description value="${IPS_DESCRIPTION}"
 set name=pkg.summary value="${IPS_SUMMARAY}"
 set name=variant.arch value=${ARCH}
 group groupname=${PROJECT}
-user username=${PROJECT} group=${PROJECT} home-dir=/opt/${PROJECT_NAME}
+user username=${PROJECT} group=${PROJECT} home-dir=/opt/${PROJECT}-${VERSION}
 endef
 export IPS_METADATA
 
