@@ -26,7 +26,7 @@ clone:
 build:
 	cd ${LOCAL_SRC}; ./configure "${CONFIGURE_OPTS}"
 	cd ${LOCAL_SRC}; make -j 8 world
-	cd ${LOCAL_SRC}; make install
+	cd ${LOCAL_SRC}; make install-world
 
 package:
 	@echo do packagey things!
