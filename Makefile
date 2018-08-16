@@ -24,6 +24,8 @@ clone:
 	@ls
 
 build:
+	@ echo 'Print env before building'
+	@ bash -c 'env'
 	cd ${LOCAL_SRC}; ./configure "${CONFIGURE_OPTS}"
 	cd ${LOCAL_SRC}; make -j 8 world
 	cd ${LOCAL_SRC}; make install-world
