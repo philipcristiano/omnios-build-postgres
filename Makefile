@@ -18,7 +18,7 @@ export LD_RUN_PATH
 LDFLAGS = "-Wl,-rpath,${LD_RUN_PATH}"
 export LDFLAGS
 
-CONFIGURE_OPTS="--enable-thread-safety --enable-debug --with-openssl --with-libxml --prefix=${PREFIX} --with-readline"
+CONFIGURE_OPTS="--enable-thread-safety --enable-debug --with-openssl --with-libxml --prefix=${PREFIX} --with-readline --disable-rpath"
 
 
 clone:
