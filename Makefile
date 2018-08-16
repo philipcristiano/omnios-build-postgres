@@ -21,7 +21,7 @@ CONFIGURE_OPTS="--enable-thread-safety --enable-debug --with-openssl --with-libx
 clone:
 	curl ${DOWNLOAD_SRC} -o ${LOCAL_SRC_TAR}
 	tar -xf ${LOCAL_SRC_TAR}
-	@ls
+	ls
 
 build:
 	@ echo 'Print env before building'
