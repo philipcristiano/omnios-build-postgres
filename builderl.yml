@@ -19,8 +19,7 @@ stages:
       - make package
       - make ips-package
 
-
   - name: publish
-    match: "^build$"
+    match: "^master$"
     steps:
       - make publish
