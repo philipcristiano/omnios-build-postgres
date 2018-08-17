@@ -15,6 +15,8 @@ PKG_BUILD_DIR="${PREFIX}"
 LD_RUN_PATH=/opt/postgresql-${VERSION}/lib
 export LD_RUN_PATH
 
+# The build will try to use $PREFIX/lib with an absolute path by default.
+# Override it to use our planned final location
 LDFLAGS=-Wl,-rpath,${LD_RUN_PATH}
 export LDFLAGS
 
