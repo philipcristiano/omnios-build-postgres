@@ -12,12 +12,11 @@ GROUPNAME=postgres
 
 PREFIX="${HOME}/build/postgresql-${VERSION}"
 PKG_BUILD_DIR="${PREFIX}"
-LD_RUN_PATH=/opt/postgresql-${VERSION}/lib
-export LD_RUN_PATH
+LIB_PATH=/opt/postgresql-${VERSION}/lib
 
 # The build will try to use $PREFIX/lib with an absolute path by default.
 # Override it to use our planned final location
-LDFLAGS=-Wl,-rpath,${LD_RUN_PATH}
+LDFLAGS=-Wl,-rpath,${LIB_PATH}
 export LDFLAGS
 
 CONFIGURE_OPTS="--enable-thread-safety --enable-debug --with-openssl --with-libxml --prefix=${PREFIX} --with-readline --disable-rpath"
